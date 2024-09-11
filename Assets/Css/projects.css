@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto Mono", system-ui;
+    
+}
+/* global css */
+:root{
+    --primary-text-color: #000000;
+    --secondary-text-color: #BDBDBD;
+    --default-text-color: #333333;
+    --placeholder-text-color:#8D8D8D;
+
+}
+/* global css */
+/* background color global css */
+:root{
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #2C2C2C;
+    --placeholder-bg-color:#F3F3F3;
+}
+
+/* projects css start */
+.project_card{
+    margin-left: 11%;
+    margin-right: 10%;
+}
+
+a, u{
+    text-decoration: none !important;
+    }
+.project_card_body{
+    border: none !important;
+}
+.project_card h6{
+    font-weight: 300;
+    font-size: 64px;
+    color: var(--secondary-text-color);
+}
+.project_card h5{
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--default-text-color);
+}
+.project_img1{
+    width: 100%;
+    height: 100%;
+}
+.project_sec_body h5{
+    font-weight: 300;
+    font-size: 40px;
+    color: var(--secondary-text-color);
+}
+.project_sec_body p{
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--primary-text-color);
+    margin-right: 12%;
+}
+.project_sec_body button{
+    width: 222px; 
+    height: 71px;
+    border: none;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--default-text-color);
+}
+.project_sec_body button i{
+    margin-left: 5%;
+}
+.gallery_arrow{
+    justify-content: flex-start !important;
+}

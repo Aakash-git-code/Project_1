@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto Mono", system-ui;
+    
+}
+/* global css */
+:root{
+    --primary-text-color: #000000;
+    --secondary-text-color: #BDBDBD;
+    --default-text-color: #333333;
+    --placeholder-text-color:#8D8D8D;
+
+}
+/* global css */
+/* background color global css */
+:root{
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #2C2C2C;
+    --placeholder-bg-color:#F3F3F3;
+}
+
+/* gallery css start */
+
+.gallery{
+   
+    padding-top: 3%;
+    margin-left: 6% !important;
+    margin-right: 6% !important;
+}
+.gallery_1_row{
+    padding-bottom: 2%;
+     gap: 3%;
+}
+.gallery_img1{
+    width: 125%;
+    height: 100%;
+}
+.gallery_img2{
+    width: 125%;
+    height: 50%;
+}
+.gallery p{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--default-text-color);
+    padding-top: 10%;
+    
+}
+.gallery_sec h6{
+    font-weight: 300;
+    font-size: 64px;
+    color: var(--secondary-text-color);
+}
+.gallery_sec h5{
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--default-text-color);
+    padding-bottom: 4%;
+}
+
+.gallery_arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    margin-left: 6% !important;
+    margin-right: 6% !important;
+}
+.gallery_arrow p{
+    display: flex;
+    font-weight: 400;
+    font-size: 24px;
+    color:var(--secondary-text-color);
+    margin-bottom: 0;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* gap: 2%; */
+}
+.arrow span{
+    margin-left: 3%;
+    /* margin-right: 10%; */
+}
+.gallery_arrow p span{
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.arrow i{
+    display: flex;
+    width: 53px;
+    height: 53px;
+    border: 1px solid #F2F2F2;
+    margin-left: 88%;
+}
+.arrow_left{
+    background: white;
+    color:var(--default-text-color);
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 992px)  { 
+    .gallery_img1{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 3%;
+    }
+    .gallery_img2{
+        width: 100%;
+        height: 50%;
+    }
+    .gallery_1_row{
+        padding-bottom: 2%;
+         gap: 0%;
+    }
+ }

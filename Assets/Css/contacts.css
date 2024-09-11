@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto Mono", system-ui;
+    
+}
+/* global css */
+:root{
+    --primary-text-color: #000000;
+    --secondary-text-color: #BDBDBD;
+    --default-text-color: #333333;
+    --placeholder-text-color:#8D8D8D;
+
+}
+/* global css */
+/* background color global css */
+:root{
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #2C2C2C;
+    --placeholder-bg-color:#F3F3F3;
+}
+/* contacts css start */
+.contacts_sec{
+    margin-left: 11%;
+    margin-right: 10%;
+    /* border: none !important; */
+}
+
+.contacts_heading h6{
+    font-weight: 300;
+    font-size: 64px;
+    color: var(--secondary-text-color);
+    padding-top: 7%;
+    margin-bottom: 0;
+}
+.contacts_heading h5{
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--default-text-color);
+    margin-bottom: 9%;
+}
+.para1{
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--default-text-color);
+    margin-bottom: 0;
+}
+.para2{
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--default-text-color);
+    margin-bottom: 8%;
+}
+.contact_number{
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--default-text-color);
+    margin-bottom: 9%;
+}
+.contact_email{
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--default-text-color);
+    margin-bottom: 8%;
+}
+.contact_button button{
+    width: 222px;
+    height: 71px;
+    border: none;
+    background: var(--default-text-color);
+    color: var(--primary-bg-color);
+    font-weight: 400;
+    font-size: 12px;
+}
+.contacts_img1{
+    width: 125%;
+    height: 100%;
+}
+@media (max-width: 768px)  { 
+    .contacts_img1{
+        width: 100%;
+        height: 100%;
+        padding-top: 2%;
+    }
+ }
+
+ @media (max-width: 576px)  { 
+    .contacts_heading h6{
+        font-size: 35px;
+    }
+    .contacts_heading h5{
+        font-size: 35px;
+    }
+ }
+ 
