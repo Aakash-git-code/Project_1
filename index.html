@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="./Assets/Css/main.css">
     <link rel="stylesheet" href="./Assets/Css/main.css">
     <link rel="stylesheet" href="./Assets/Css/all.min.css">
-    <link  rel="stylesheet" href="./Assets/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/Css/bootstrap.min.css">
     <link rel="stylesheet" href="./Assets/Css/fontawesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
 </head>
 <body>
   <navbar-component></navbar-component>
@@ -23,31 +26,76 @@
        <!-- text1 -->
        <section id="section1">
         <div class="col card mb-3 text-start card_sec1" >
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="row g-0 card_sec1_body">
+            
             <div class="col-lg-5 col-md-6 col-sm-6 sec1_hero">
               <div class="card-body cardbody_sec1">
                 <h6 class="card-title">PROJECT</h6>
                 <h5 class="card-title">NURTOWN</h5>
                 <div class="container text-start">
                   <div class="col sec1_arrow">
-                    <span><i class="fa-solid fa-arrow-left sec1_left_arrow"></i></span>
-                    <span><i class="fa-solid fa-arrow-right sec1_left_right"></i></span>
+                    <button class="sec1_arrow_btn carousel-control-prev" data-bs-target="#carouselExampleControls" data-bs-slide="prev" onclick="searchId()"><i class="fa-solid fa-arrow-left sec1_left_arrow"></i></button>
+                    <button class="sec1_arrow_btn carousel-control-next" data-bs-target="#carouselExampleControls" data-bs-slide="next" onclick="searchId()"><i class="fa-solid fa-arrow-right sec1_left_right"></i></button>
                   </div>
-                  <p>01<span> / </span> 02</p>
+                  <div class="num">
+                    <p>01<span> / </span> 02</p>
+                  </div>
                 </div>
               </div>
             </div>
+            
+              
+              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+             -->
             <div class="col-lg-7 col-md-6 col-sm-6">
+              <div class="carousel-inner col-lg-7 col-md-6 col-sm-6">
+                <div class="carousel-item active item">
+                  <div class="img-wrapper">
+                    <img id="myImage" class="img-responsive"
+                    src="./Assets/Images/image1.png">
+                    <div class="img-overlay">
+                    <button type="button" onclick="changeImage()">ЧИТАТЬ<i class="fa-solid fa-arrow-right sec2_arrow_right" ></i></button>
+                    </div>
+                    </div> 
+                </div>
+                <div class="carousel-item item">
+                  <div class="img-wrapper">
+                    <img id="myImage" class="img-responsive"
+                    src="./Assets/Images/image1.png">
+                    <div class="img-overlay">
+                    <button type="button" onclick="changeImage()">ЧИТАТЬ<i class="fa-solid fa-arrow-right sec2_arrow_right" ></i></button>
+                    </div>
+                    </div> 
+                </div>
+                <div class="carousel-item item">
+                  <div class="img-wrapper">
+                    <img id="myImage" class="img-responsive"
+                    src="./Assets/Images/image1.png">
+                    <div class="img-overlay">
+                    <button type="button" onclick="changeImage()">ЧИТАТЬ<i class="fa-solid fa-arrow-right sec2_arrow_right" ></i></button>
+                    </div>
+                    </div> 
+                </div>
+              </div>
               <!-- <img src="./Assets/Images/imgbuilding.png" class=" sec1_img" alt="..."> -->
-              <div class="img-wrapper">
+              <!-- <div class="img-wrapper">
                 <img id="myImage" class="img-responsive"
-                src="./Assets/Images/imgbuilding.png">
+                src="./Assets/Images/image1.png">
                 <div class="img-overlay">
                 <button type="button" onclick="changeImage()">ЧИТАТЬ<i class="fa-solid fa-arrow-right sec2_arrow_right" ></i></button>
                 </div>
-                </div>
+                </div> -->
             </div>
           </div>
+        </div>
         </div>
        </section>
        <!-- section1 end -->
@@ -114,31 +162,43 @@
            <!-- setion4 start -->
             <section id="section4">
               <div class="col sec4">
+              <div><p>Наши проекты</p></div>
+              
+              <div class="sec4_btn_div">
+                <button type="button" class="sec4_btn" onclick="changeImage()">
+                  ВСЕ ПРОЕКТЫ 
+                  <i class="fa-solid fa-arrow-right sec4_arrow_right"></i>
+                </button>
+              </div>
+            </div>
+              <div class="col sec4">
                 <div><p>Наши проекты</p></div>
                 <div class="col sec4_div">
                   <div class="col-lg-6 col-md-6">
-                    <img src="./Assets/Images/sec4_img2.png" class="sec4_img1" alt="...">
+                    <img src="./Assets/Images/sec4_img2.png" class="sec4_img1" id="myImage_sec4" alt="...">
                   </div>
                   <div class="col-lg-6 col-md-6">
-                    <img src="./Assets/Images/sec4_img1.png" class="sec4_img2" alt="...">
+                    <img src="./Assets/Images/sec4_img1.png" class="sec4_img2" id="myImage_sec4" alt="...">
                   </div>
                 </div>
                 <div class="col sec4_div">
                   <div class="col-lg-3 col-md-3">
-                    <img src="./Assets/Images/sec4_img3.png" class="sec4_img3" alt="...">
+                    <img src="./Assets/Images/sec4_img3.png" class="sec4_img3" id="myImage_sec4" alt="...">
                   </div>
                   <div class="col-lg-5 col-md-5">
-                    <img src="./Assets/Images/sec4_img4.png" class="sec4_img4" alt="...">
+                    <img src="./Assets/Images/sec4_img4.png" class="sec4_img4" id="myImage_sec4" alt="...">
                   </div>
                   <div class="col-lg-4 col-md-4">
-                    <img src="./Assets/Images/sec4_img5.png" class="sec4_img5" alt="...">
+                    <img src="./Assets/Images/sec4_img5.png" class="sec4_img5" id="myImage_sec4" alt="...">
                   </div>
                 </div>
                 <div class="sec4_btn_div">
-                  <button type="button" class="sec4_btn">
-                    ВСЕ ПРОЕКТЫ 
-                    <i class="fa-solid fa-arrow-right sec4_arrow_right"></i>
-                  </button>
+                  <a href="./Pages/projects.html">
+                    <button type="button" class="sec4_btn"  >
+                      ВСЕ ПРОЕКТЫ 
+                      <i class="fa-solid fa-arrow-right sec4_arrow_right"></i>
+                    </button>
+                  </a>
                 </div>
               </div>
             </section>
@@ -242,5 +302,12 @@
           
     <script src="./Assets/Js/bootstrap.bundle.min.js"></script>
     <script src="./Assets/Js/main.js"></script>
+    <script src="./Assets/Js/form.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
 </body>
 </html>

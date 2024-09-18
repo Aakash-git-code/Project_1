@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-<script
-    src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-    crossorigin="anonymous"
-  ></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
 </head>
 <body>
@@ -28,40 +29,107 @@
       <div class="container gallery_sec">
         
         <div class="col gallery">
-            <div class="col">
-                <h6 class="card-title">ГАЛЕРЕЯ</h6>
-                <h5 class="card-title">ФОТОГРАФИЙ</h5>
-            </div>
-          <div class="row gallery_1_row">
+           
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             
-            <div class="col-lg-2 col-md-2 col-sm-4">
-              <img src="../Assets/Images/gallery_img1.png" class="gallery_img2">
-              <div class="">
-                  <p>Описание или пояснение к изображению.</p>
+            <div class="carousel-inner">
+              <div class="carousel-item active item">
+                <div class="col">
+                  <h6 class="card-title">ГАЛЕРЕЯ</h6>
+                  <h5 class="card-title">ФОТОГРАФИЙ</h5>
+              </div>
+            <div class="row gallery_1_row">
+              
+              <div class="col-lg-2 col-md-2 col-sm-4">
+                <img src="../Assets/Images/gallery_img1.png" class="gallery_img2">
+                <div class="">
+                    <p>Описание или пояснение к изображению.</p>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img2.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img3.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img4.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img5.png" class="gallery_img1"></div>
+              
+            </div>
+            <div class="row gallery_1_row">
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img6.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img7.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img8.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img9.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img10.png" class="gallery_img1"></div>
+            </div>
+              </div>
+              <div class="carousel-item item">
+                <div class="col">
+                  <h6 class="card-title">ГАЛЕРЕЯ</h6>
+                  <h5 class="card-title">ФОТОГРАФИЙ</h5>
+              </div>
+            <div class="row gallery_1_row">
+              
+              <div class="col-lg-2 col-md-2 col-sm-4">
+                <img src="../Assets/Images/gallery_img1.png" class="gallery_img2">
+                <div class="">
+                    <p>Описание или пояснение к изображению.</p>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img2.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img3.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img4.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img5.png" class="gallery_img1"></div>
+              
+            </div>
+            <div class="row gallery_1_row">
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img6.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img7.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img8.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img9.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img10.png" class="gallery_img1"></div>
+            </div>
+              </div>
+              <div class="carousel-item item">
+                <div class="col">
+                  <h6 class="card-title">ГАЛЕРЕЯ</h6>
+                  <h5 class="card-title">ФОТОГРАФИЙ</h5>
+              </div>
+            <div class="row gallery_1_row">
+              
+              <div class="col-lg-2 col-md-2 col-sm-4">
+                <img src="../Assets/Images/gallery_img1.png" class="gallery_img2">
+                <div class="">
+                    <p>Описание или пояснение к изображению.</p>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img2.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img3.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img4.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img5.png" class="gallery_img1"></div>
+              
+            </div>
+            <div class="row gallery_1_row">
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img6.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img7.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img8.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img9.png" class="gallery_img1"></div>
+              <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img10.png" class="gallery_img1"></div>
+            </div>
               </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img2.png" class="gallery_img1"></div>
-            <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img3.png" class="gallery_img1"></div>
-            <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img4.png" class="gallery_img1"></div>
-            <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img5.png" class="gallery_img1"></div>
-            
-          </div>
-          <div class="row gallery_1_row">
-            <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img6.png" class="gallery_img1"></div>
-            <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img7.png" class="gallery_img1"></div>
-            <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img8.png" class="gallery_img1"></div>
-            <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img9.png" class="gallery_img1"></div>
-            <div class="col-lg-2 col-md-4 col-sm-4"><img src="../Assets/Images/gallery_img10.png" class="gallery_img1"></div>
+            <div class="col text-start gallery_arrow">
+              <div class="gallery_arrow1 num" id="result">
+                <p >1</p>
+                <span> / </span>
+                 <p >3</p>
+                </div>
+              <div class="col arrow">
+                  <button class="arrow_btn carousel-control-prev" data-bs-target="#carouselExampleControls" data-bs-slide="prev" onclick="searchId()"><i class="fa-solid fa-arrow-left arrow_left"></i></button>
+                  <button class="arrow_btn carousel-control-next" data-bs-target="#carouselExampleControls" data-bs-slide="next" onclick="searchId()"><i class="fa-solid fa-arrow-right arrow_left"></i></button>
+                </div>
+            </div>
           </div>
         </div>
         
-        <div class="col text-start gallery_arrow">
-            <div><p>01<span> / </span> 05</p></div>
-            <div class="col arrow">
-                <span><i class="fa-solid fa-arrow-left arrow_left"></i></span>
-                <span><i class="fa-solid fa-arrow-right arrow_left"></i></span>
-              </div>
-          </div>
+        
       </div>
        <!-- section end -->
 

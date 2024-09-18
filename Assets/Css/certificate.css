@@ -22,6 +22,13 @@ body{
     --placeholder-bg-color:#F3F3F3;
 }
 /* cetificate css start */
+
+#link4 {
+    /* text-decoration-line: overline !important; */
+    text-decoration-line: overline underline !important;
+    text-underline-offset: 3px;
+}
+
 .certificate_img1{
     width: 100%;
     height: 100%;
@@ -47,37 +54,50 @@ body{
 .gallery_arrow{
     display: flex;
     justify-content: end;
-    align-items: end;
+    align-items: center;
     gap: 3%;
     padding-top: 3%;
     padding-bottom: 1%;
 }
 .arrow_count{
     margin-right: 4%;
-}
-.gallery_arrow p{
     display: flex;
+    align-items: center;
     font-weight: 400;
     font-size: 24px;
     color:var(--secondary-text-color);
+}
+.arrow_count span{
+    color:var(--secondary-text-color); 
+    margin-left: 35%;
+    margin-right: 35%;  
+}
+.arrow_count p{
+    /* display: flex; */
+    align-items: center;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 24px;
+
 }
 .arrow{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* gap: 2%; */
+    gap: 8%;
 }
 .arrow span{
     margin-left: 3%;
     /* margin-right: 10%; */
 }
-.gallery_arrow p span{
-    margin-left: 35%;
-    margin-right: 35%;
+
+.arrow_btn{
+    width: 53px !important;
+    border: 1px solid var(--secondary-text-color) !important;
 }
-.arrow i{
+.arrow_btn i{
     display: flex;
-    width: 53px;
+    width: 53px !important;
     height: 53px;
     border: 1px solid #F2F2F2;
 }
@@ -89,6 +109,14 @@ body{
 }
 .gallery_arrow{
     margin-right: 3%;
+}
+
+
+.carousel-control-next, .carousel-control-prev {
+    position: relative !important;
+    top: 0;
+    bottom: 0;
+    
 }
 @media (max-width: 768px) { 
     .arrow_count {

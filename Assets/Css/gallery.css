@@ -23,6 +23,11 @@ body{
 }
 
 /* gallery css start */
+#link2 {
+    /* text-decoration-line: overline !important; */
+    text-decoration-line: overline underline !important;
+    text-underline-offset: 3px;
+}
 
 .gallery{
    
@@ -65,11 +70,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3%;
+    gap: 7%;
     padding-top: 3%;
     padding-bottom: 1%;
     margin-left: 6% !important;
     margin-right: 6% !important;
+}
+.gallery_arrow1{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 24px;
+    color:var(--secondary-text-color);
 }
 .gallery_arrow p{
     display: flex;
@@ -82,30 +94,41 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /* gap: 2%; */
+    gap: 2%;
 }
-.arrow span{
-    margin-left: 3%;
-    /* margin-right: 10%; */
-}
-.gallery_arrow p span{
+.gallery_arrow1 span{
     margin-left: 35%;
     margin-right: 35%;
+    font-weight: 400;
+    font-size: 24px;
+    color:var(--secondary-text-color);
 }
-.arrow i{
+.arrow  i{
     display: flex;
-    width: 53px;
+    justify-content: center;
+    align-items: center;
+    width: 53px !important;
     height: 53px;
-    border: 1px solid #F2F2F2;
-    margin-left: 88%;
+    border: 1px solid #F2F2F2 !important;
+    /* margin-left: 88%; */
 }
-.arrow_left{
+.arrow_btn{
     background: white;
-    color:var(--default-text-color);
+    border: none;
+    color:var(--default-text-color) !important;
     align-items: center;
     justify-content: center;
 }
-
+/* ------------- */
+.carousel-control-next, .carousel-control-prev {
+    position: relative !important;
+    width: 53px !important;
+    border: 1px solid #F2F2F2 !important;
+    top: 0;
+    bottom: 0;
+    
+}
+/* ----------------- */
 @media (max-width: 992px)  { 
     .gallery_img1{
         width: 100%;
@@ -119,5 +142,8 @@ body{
     .gallery_1_row{
         padding-bottom: 2%;
          gap: 0%;
+    }
+    .arrow{
+        margin-left: 6%;
     }
  }

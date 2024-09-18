@@ -23,6 +23,15 @@ body{
 }
 
 /* projects css start */
+#link3 {
+    /* text-decoration-line: overline !important; */
+    text-decoration-line: overline underline !important;
+    text-underline-offset: 3px;
+}
+
+
+  
+
 .project_card{
     margin-left: 11%;
     margin-right: 10%;
@@ -72,4 +81,57 @@ a, u{
 }
 .gallery_arrow{
     justify-content: flex-start !important;
+    gap: 8%;
+    margin-left: 0% !important;justify-content: flex-start !important;
+    gap: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    margin-left: 0% !important;
+    margin-right: 6% !important;
+}
+.arrow{
+    gap: 16% !important;
+    display: flex;
+}
+.arrow_btn{
+    width: 63px !important;
+    height: 53px;
+    border: 1px solid #F2F2F2 !important;
+    background: white;
+}
+#prev-btn{
+    border-radius: 0 ;
+    border: 1px solid #F2F2F2 !important;
+}
+#next-btn{
+    border-radius: 0 ;
+    border: 1px solid #F2F2F2 !important;
+}
+.num p {
+    display: flex;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--secondary-text-color);
+    margin-bottom: 0;
+}
+.num span{
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--secondary-text-color);
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.pagination li{
+    padding-bottom: 0 !important;
+}
+
+
+@media (max-width: 992px) {
+    .arrow{
+        margin-left: 8%;
+    }
 }

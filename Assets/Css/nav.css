@@ -28,6 +28,9 @@ nav{
 span{
     color: var(--primary-text-color);
 }
+
+
+
 .logo_img1{
     width: 70px;
     height: 43px;
@@ -58,6 +61,7 @@ span{
     font-weight: 400;
     font-size: 12px;
     padding-left: 0 !important;
+    color: #000000 !important;
 }
 
 @media  (max-width: 779px) {
