@@ -24,7 +24,6 @@ body{
 
 /* gallery css start */
 #link2 {
-    /* text-decoration-line: overline !important; */
     text-decoration-line: overline underline !important;
     text-underline-offset: 3px;
 }
@@ -110,7 +109,6 @@ body{
     width: 53px !important;
     height: 53px;
     border: 1px solid #F2F2F2 !important;
-    /* margin-left: 88%; */
 }
 .arrow_btn{
     background: white;
