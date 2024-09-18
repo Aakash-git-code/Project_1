@@ -120,7 +120,8 @@ body{
     justify-content: center;
 }
 /* ------------- */
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
     position: relative !important;
     width: 53px !important;
     border: 1px solid #F2F2F2 !important;
