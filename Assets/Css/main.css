@@ -101,7 +101,8 @@ body{
 .sec1_arrow_btn{
     border: 1px solid #F2F2F2;
 }
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
     position: relative !important;
     top: 0;
     bottom: 0;
