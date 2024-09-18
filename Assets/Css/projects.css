@@ -24,13 +24,9 @@ body{
 
 /* projects css start */
 #link3 {
-    /* text-decoration-line: overline !important; */
     text-decoration-line: overline underline !important;
     text-underline-offset: 3px;
 }
-
-
-  
 
 .project_card{
     margin-left: 11%;
