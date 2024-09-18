@@ -112,7 +112,8 @@ body{
 }
 
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
     position: relative !important;
     top: 0;
     bottom: 0;
